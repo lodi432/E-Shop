@@ -1,6 +1,6 @@
 
 <?php
-include_once $_SERVER['DOCUMENT_ROOT']."/E-Shop/konfiguracija.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/konfiguracija.php";
 include 'includes/head.php';
 
 $email=((isset($_POST['email']))?sanitize($_POST['email']):'');

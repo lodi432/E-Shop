@@ -1,8 +1,8 @@
 <?php
 
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/konfiguracija.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/konfiguracija.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
 
 
 $mode = sanitize($_POST['mode']);

@@ -1,12 +1,12 @@
 <?php
 include_once 'funkcije.php';
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
 require_once BASEURL.'helpers/helpers.php';
 require BASEURL.'vendor/autoload.php';
 
 
-$putanjaApp = "/E-Shop/";
+$putanjaApp = "/";
 $naslovAPP="ECOM";
 $appID="ECOMs";
 
@@ -20,8 +20,8 @@ if($_SERVER["HTTP_HOST"]==="edunovanastava.byethost33.com"){
 	$dev=false;
 }else{
 	$host="localhost";
-	$dbname="ecom244";
-	$dbuser="root";
+	$dbname="econ244";
+	$dbuser="";
 	$dbpass="";
 	$dev=true;
 }
@@ -36,11 +36,11 @@ try{
 
 	switch($e->getCode()){
 		case 1049:
-			header("location: " . $putanjaAPP . "greske/kriviNazivBaze.html");
+			header("location: " . $putanjaApp . "greske/kriviNazivBaze.html");
 			exit;
 			break;
 		default:
-			header("location: " . $putanjaAPP . "greske/greska.php?code=" . $e->getCode());
+			header("location: " . $putanjaApp . "greske/greska.php?code=" . $e->getCode());
 			exit;
 			break;
 	}

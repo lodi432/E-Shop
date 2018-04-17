@@ -1,4 +1,4 @@
-<?php
+﻿<?php
       require_once 'konfiguracija.php';
 
       include 'include/head.php';
@@ -15,7 +15,7 @@
 
 
     <div class="row">
-      <h2 class="text-center" id="mk1">Featured Products</h2>
+      <h2 class="text-center" id="mk1">Featured Products X</h2>
       <?php   while ($product = $featured->fetch(PDO::FETCH_ASSOC)): ?>
 
 
@@ -27,7 +27,7 @@
                   <p class="list-price">List Price: <s>$<?php echo $product['list_price'];?></s></p>
                   <p class="price">Our Price: $<?php echo $product['price'];?></p>
                 <!-- <a href="#" button class="button tiny" data-dialog="somedialog" id="kol" >Detalji</a> -->
-                  <div class="button-wrap"><button data-dialog="somedialog"  class="trigger" onclick="detailsmodal(<?echo $product['id'];?>)">Detalji</button></div>
+                  <div class="button-wrap"><button data-dialog="somedialog"  class="trigger" onclick="detailsmodal(<?php echo $product['id'];?>)">Detalji</button></div>
             </div>
         </div>
       <?php endwhile; ?>

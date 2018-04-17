@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/konfiguracija.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/konfiguracija.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
 
 $product_id = sanitize($_POST['product_id']);
 $size = sanitize($_POST['size']);

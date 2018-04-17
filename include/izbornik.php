@@ -1,4 +1,4 @@
-
+﻿
 
 <?php
 $sql = $veza->prepare('SELECT * FROM categories WHERE parent = 0;');
@@ -20,18 +20,23 @@ $sql = $veza->prepare('SELECT * FROM categories WHERE parent = 0;');
 
 
 
+
+
           <li class="has-form">
 
               <div class="large-8 small-9 columns">
-                <input type="text" placeholder="Search Store...">
+                <form method="get" action="searchE.php" enctype="multipart/form-data">
+                <input type="text" name='user_query' placeholder="Search Store...">
               </div>
               <div class="large-4 small-3 columns">
-                <a href="#" class="button alert expand" >Search</a>
+                <!-- <a href="searchE.php" name="search" class="button alert expand" >Search</a> -->
+                <button name="search" class="button alert expand" >Search</button>
               </div>
+            </form>
 
           </li>
            <li class="has-dropdown">
-              <a href="admin/login2.php" >Prijava</a>
+              <a href="login.php" >Prijava</a>
                <ul class="dropdown">
                   <li><a href="registracija.php">Registracija</a>
                   </li>
@@ -42,6 +47,7 @@ $sql = $veza->prepare('SELECT * FROM categories WHERE parent = 0;');
               </ul>
           </li>
         </ul>
+
 
 
 

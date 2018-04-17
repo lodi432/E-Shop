@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/konfiguracija.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/konfiguracija.php';
 $name = sanitize($_POST['full_name']);
 $email = sanitize($_POST['email']);
 $street = sanitize($_POST['street']);

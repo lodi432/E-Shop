@@ -1,5 +1,5 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
++<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/config.php';
 require_once 'konfiguracija.php';
 
 
@@ -72,4 +72,6 @@ include 'include/izbornik.php';
 } catch (\Stripe\Error\Card $e){
 echo $e;
 }
+
+
  ?>

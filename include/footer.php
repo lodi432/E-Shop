@@ -56,7 +56,7 @@
 function detailsmodal(id) {
 var data = {"id" : id} ;
 jQuery.ajax({
-url : '/E-Shop/include/detailsmodal.php',
+url : '/include/detailsmodal.php',
 method : "post" ,
 data : data,
 success : function(data){
@@ -72,7 +72,7 @@ jQuery ('#details-modal').modal('toggle');
 function update_cart(mode,edit_id,edit_size){
   var data = {"mode" : mode, "edit_id" : edit_id, "edit_size" : edit_size};
   jQuery.ajax({
-    url : '/E-Shop/admin/parsers/update_cart.php',
+    url : '/admin/parsers/update_cart.php',
     method : "post",
     data : data,
 
@@ -102,7 +102,7 @@ function add_to_cart(){
      return;
   }else{
     jQuery.ajax({
-               url: '/E-Shop/admin/parsers/add_cart.php',
+               url: '/admin/parsers/add_cart.php',
                method : 'post',
                data : data,
                success : function(vratioServer){

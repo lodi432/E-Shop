@@ -1,8 +1,5 @@
-
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/E-Shop/konfiguracija.php';
-
-
+require_once $_SERVER['DOCUMENT_ROOT'].'/konfiguracija.php';
 
 $parentID = (int)$_POST['parentID'];
 $selected = sanitize($_POST['selected']);
@@ -15,5 +12,5 @@ ob_start(); ?>
 <?php while ($child = $childQuery->fetch(PDO::FETCH_ASSOC)): ?>
  <option value="<?=$child['id'];?>" <?=(($selected == $child['id'])?' selected':'');?>><?=$child['category'];?></option>
 
-  <?endwhile; ?>
+ <?php endwhile; ?>
 <?php echo ob_get_clean();?>
